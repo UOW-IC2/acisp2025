@@ -1,16 +1,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-    <meta http-equiv="content-type" content="application/xhtml+xml; charset=iso-8859-1"; charset="utf-8" />
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=iso-8859-1" />
     <title>ACISP 2025</title>
-    <script src="js/vue.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css" />
 	<link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
-	<style>
-      table,table tr th, table tr td { border:1px solid lightslategray; }
-      table { line-height: 25px; text-align: center; border-collapse: collapse;}
-    </style>
+
   </head>
   <body>
     <div id="wrapper">
@@ -76,39 +72,51 @@
             <li><a href="accepted.html">Accepted Papers</a></li>
             <li><a href="program.html">Technical Program</a></li>
             <li><a href="keynote.html">Keynote Speakers</a></li>
-            <li><a href="venue.html">Conference Venue</a></li>
+			      <li><a href="venue.html">Conference Venue</a></li>
             <li><a href="sponsors.html">Sponsors</a></li>
             <li><a href="contact.html">Contact Us</a></li>
           </ul>
 		  </br>
           <a href="https://www.uow.edu.au/engineering-information-sciences/research/institute-cybersecurity-cryptology/" target="_blank"><img class="img-sponsor" alt="iC2" src="img/ic2.png"></a> </br> 
-          </br><a href="https://www.chiefscientist.nsw.gov.au/" target="_blank"><img class="img-sponsor" alt="CSE" src="img/CS_E-logo.png"></a> </br>
-          <br><a href="https://www.springer.com/gp/computer-science/lncs" target="_blank"><img class="img-sponsor" alt="Springer" src="img/logo-springer.png"></a></br>
-          </br><a href="https://www.mdpi.com/journal/cryptography/special_issues/0HGCF8V0ZN" target="_blank"><img class="img-sponsor" alt="Cryptography" src="img/cryptography-logo.png"></a> </br>
+        </br><a href="https://www.chiefscientist.nsw.gov.au/" target="_blank"><img class="img-sponsor" alt="CSE" src="img/CS_E-logo.png"></a> </br>
+        <br><a href="https://www.springer.com/gp/computer-science/lncs" target="_blank"><img class="img-sponsor" alt="Springer" src="img/logo-springer.png"></a></br>
+        </br><a href="https://www.mdpi.com/journal/cryptography/special_issues/0HGCF8V0ZN" target="_blank"><img class="img-sponsor" alt="Cryptography" src="img/cryptography-logo.png"></a> </br>
         </div>
         <div id="stuff">
-            <!--  <br /><br />
-        <div style="display: block; height: 40px;text-align: center; color:blue; font-weight: bolder;">
-		  Temporary free access to the conference proceedings will be available on <div style="font-size: larger;"><a href="https://link.springer.com/book/10.1007/978-3-031-22301-3" target="_blank">SpringerLink</a></div> between 30 Nov and 30 Dec 2022.
-       </div>
-	   <br /><br /><br />
-        -->
-		  <h2>Conference Program</h2>
           
-		  
-<!--<div style="display: block; height: 40px;text-align: center; color:blue; font-weight: bolder; font-size: larger;">
-        Conference Program
-       </div>-->
-  <!--
-  
-  
-  -->
+		  <h2>Sponsors</h2>
+      <hr/> 
+      <h3>Sponsorship Tiers and Benefits</h3>
 
-		  
-		  
+      <p>
+        In recognition of the support, sponsors will be acknowledged and featured on:
+      </p>
+      <ul style="list-style-type: disc; padding-left: 20px; font-weight: normal;">
+        <li>the website of ACISP 2025</li>
+        <li>the conference venue and pack</li>
+        <li>Something else we can easily do for you.</li>
+      </ul>
 
 
-        </div>
+      <p>
+        To acknowledge more generous support, we will assign the following sponsorship level designations based on the amount of contribution.
+      </p>
+
+      <p><strong>Platinum level</strong> - AUD $13,000 and up (receive three free registrations)</p>
+
+      <p><strong>Gold level</strong> - AUD $10,000 and up (receive two free registrations)</p>
+
+      <p><strong>Silver level</strong> - AUD $6,000 and up (receive one free registration)</p>
+
+      <p><strong>Bronze level</strong> - AUD $3,000 and up</p>
+
+      <p>
+        Note: order and size of the logos displayed may depend on the sponsorship level. Please contact the
+        General Chairs if your company is interested in sponsoring this conference.
+      </p>
+      
+    
+      </div>
       </div>
       <div id="bottom">
         <center>
@@ -116,63 +124,9 @@
         </center>
       </div>
     </div>
-    
-	  <script src="js/jquery.min.js"></script>
+	    <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/menu.js"></script>
-    <script type="text/javascript">
-      new Vue({
-          el:'#wrapper',
-          data:{
-              message:"123465",
-              clock:''
-          },
-          computed:{
-              msg(){
-                  console.log("msg==");
-                  return '789456';
-              }
-          },
-          methods:{
-              conOut(){
-                  console.log("调用输出",this.msg);
-              },
-              getLocalTime(nS) {  
-                return new Date(parseInt(nS)).toLocaleString().replace(/:\d{1,2}$/,' ');  
-              },
-          },
-          beforeMount(){
-            var timenow = new Date();
-            var offset = -timenow.getTimezoneOffset()/60;
-            console.log(offset); // 这个是获取到你当前的时区
-            // var hour = 11 - offset;
-            this.clock = 11 - offset;
-            console.log(this.clock);
-            console.log("挂载前生命周期");
-          },
-          mounted(){
-              console.log("挂载完成生命周期");
-          },
-          watch:{
-              'message'(){
-                  console.log("监视器调用");
-              }
-          }
-      })
-      for(i = 1; i <= 25; i++) {
-        convert("time".concat(i), "id".concat(i))
-      }
-
-  </script>
-
-	<script>
-  //  var wordTime = new Date(new Date().setUTCHours(24-offset+9, 0, 0, 0)).getTime();
-   // 括号里数字可以随意更改，意思是世界时间的0小时0分0秒0毫秒（如果你的时区比世界时间晚5小时，你的9点就是世界时间的14点，括号内0换成14）
-  //  console.log(wordTime);
-  //  var endtime = getLocalTime(wordTime);
-  //  console.log(endtime);
-  //  $('#td1').html(endtime);
-	</script>
 
 	
   </body>
