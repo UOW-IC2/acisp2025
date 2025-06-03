@@ -6,7 +6,23 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
 	<link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
-
+    <style>
+      .sponsor-wall {
+        display: flex;
+        justify-content: flex-start;   
+        flex-wrap: wrap;           
+        gap: 40px;                 
+        padding: 40px 0;
+        width: 100%;
+      }
+  
+      .sponsor-logo {
+        width: 260px;
+        height: auto;
+        object-fit: contain;
+        display: block;
+      }
+    </style>
   </head>
   <body>
     <div id="wrapper">
@@ -85,6 +101,11 @@
         <div id="stuff">
           
 		  <h2>Sponsors</h2>
+        <div class="sponsor-wall">
+          <a href="https://www.sampleassist.com/" target="_blank">
+            <img src="img/SA.png" alt="SampleAssist" class="sponsor-logo">
+          </a>
+        </div>
       <hr/> 
       <h3>Sponsorship Tiers and Benefits</h3>
 
